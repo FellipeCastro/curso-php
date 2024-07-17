@@ -1,0 +1,15 @@
+-abs() = retira o sinal de um valor, ex: -2 = 2
+-base_convert() = converte as bases dos números, ex de decimal para binário
+-ceil() = arredonda para cima
+-floor() = arredonda para baixo
+-round() = arrendondamento normal
+-hypot() = calcula a hipotenusa
+-intdiv() = divisao inteira, ex 5/2 = 2 com resto 1
+-min() = mostra o valor minimo de uma sequencia
+-max() = mostra o valor maximo de uma sequencia
+-pi() = valor de PI
+-pow() = potencia (ao usar essa função no lugar do operador a ordem de precedencia é perdida)
+-sin() = seno
+-cos() = cosseno
+-tan() = tangente
+-sqrt() = raiz quadrada
