@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <main>
         <h1>Analisador de número real</h1>
-    </header>
-    <section>
-        <form action="analisar.php" method="get">
-            <label for="numero">Número real</label>
-            <input type="" name="numero" id="numero">
+
+        <form action="numero.php" method="post">
+            <label for="n">Número real:</label>
+            <input type="number" name="n" id="n" step="0.001">
 
             <input type="submit" value="Analisar">
         </form>
-    </section>
+    </main>
 </body>
 </html>
