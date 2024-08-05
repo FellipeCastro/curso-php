@@ -17,7 +17,9 @@
             $dolar = 5.58;
             $valorFinal = $valor / $dolar;
 
-            echo "<p>Seus R$ $valor equivalem a US$ $valorFinal</p>";
+            $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+            echo "<p>Seus ".  numfmt_format_currency($padrao, $valor, "BRL") . " equivalem a ".  numfmt_format_currency($padrao, $valorFinal, "USD") . "</p>";
         ?>
 
         <a href="index.html">
