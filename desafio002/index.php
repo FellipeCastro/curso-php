@@ -15,14 +15,12 @@
         <p>Gerando um número aleatório entre 0 e 100...</p>
 
         <?php 
-            $num = rand(0, 100);
+            $num = mt_rand(0, 100);
 
             echo "<p>O número gerado foi <strong>$num</strong></p>";
         ?>
 
-        <form action="index.php" method="get">
-            <input type="submit" value="Gerar Número">
-        </form>
+        <button onclick="javascript:document.location.reload()">&#x1F504; Gerar outro</button>
     </section>
 </body>
 </html>
