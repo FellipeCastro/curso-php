@@ -11,6 +11,15 @@
         // Capturando os valores do formulário
         $dividendo = $_POST["dividendo"] ?? 0;
         $divisor = $_POST["divisor"] ?? 0;
+
+        // Analisando divisão
+        $quociente = null;
+        $resto = null;
+
+        if ($divisor != 0) {
+            $quociente = intdiv($dividendo, $divisor);
+            $resto = $dividendo % $divisor;
+        }
     ?>
 
     <main>
@@ -29,17 +38,6 @@
 
     <section>
         <h2>Estrutura da Divisão</h2>
-
-        <?php 
-            // Analisando divisão
-            $quociente = null;
-            $resto = null;
-
-            if ($divisor != 0) {
-                $quociente = intdiv($dividendo, $divisor);
-                $resto = $dividendo % $divisor;
-            }
-        ?>
 
         <table class="divisao">
             <tr>
