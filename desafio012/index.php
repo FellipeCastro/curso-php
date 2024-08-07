@@ -38,7 +38,7 @@
     <section>
         <h2>Totalizando tudo</h2>
 
-        <p>Analisando o valor que você digitou, <strong><?= number_format($segundosTotal, 0, ",", ".") ?></strong> equivalem a um total de:</p>
+        <p>Analisando o valor que você digitou, <strong><?= number_format($segundosTotal, 0, ",", ".") ?> segundos</strong> equivalem a um total de:</p>
         <ul>
             <li><?= $semanas ?> semanas</li>
             <li><?= $dias ?> dias</li>
